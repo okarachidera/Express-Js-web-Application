@@ -1,0 +1,229 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Lato:wght@300;400&family=M+PLUS+Code+Latin:wght@300&family=Yuji+Syuku&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+    </script>
+  </head>
+
+  <body>
+
+    <h3 class="heading"> HERE YOU CAN PERFORM A CRUD OPERATION ON USER INFORMATION</h3>
+    <div class="section">
+
+
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Add Users
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              <div class="container">
+                <div class=" text-center mt-5 ">
+                  <h1>Input User Details</h1>
+                </div>
+                <div class="row ">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4 bg-light">
+                      <div class="card-body bg-light">
+                        <div class="container">
+                          <form id="add-user-form" method="post" role="form">
+                            <div class="controls">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="form-group"> <label>User full name</label> <input type="text"
+                                      name="fullname" class="form-control" placeholder="Please enter the user full name"
+                                      required="required" data-error="full name  is required."> </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group"> <label> User Email </label> <input type="email" name="email"
+                                      class="form-control" placeholder="Please enter the mail of the user"
+                                      required="required" data-error="mail is required."> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group"> <label>Gender</label> <input type="text" name="gender"
+                                      class="form-control" placeholder="Please enter the gender of the user"
+                                      required="required" data-error="gender required."> </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group"> <label>User phone number </label> <input type="text"
+                                      name="phone" class="form-control"
+                                      placeholder="Please enter the phone number of the user" required="required"
+                                      data-error="phone number is required."> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group"> <label> User Address</label> <input type="text"
+                                      name="address" class="form-control"
+                                      placeholder="Please enter the address of the user" required="required"
+                                      data-error="address is required."> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group"> <label> Notes</label> <input type="text" name="notes"
+                                      class="form-control" placeholder="Things to note about user"
+                                      data-error="description is required."> </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12 post"> <input type="submit"
+                                  class="btn btn-primary btn-send  pt-2 btn-block " value="Add new User"> </div>
+                            </div>
+                          </form>
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div> <!-- /.8 -->
+                </div> <!-- /.row-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Update User
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="container">
+              <div class=" text-center mt-5 ">
+                <h1>UpdateUser Details </h1>
+              </div>
+              <div class="row ">
+                <div class="col-lg-7 mx-auto">
+                  <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                      <div class="container">
+                        <form id="update-user-form" method="post" role="form">
+                          <div class="controls">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group"> <label>User email</label> <input type="email" name="email"
+                                    class="form-control" placeholder="Please enter your user email"
+                                    required="required" data-error="email is required."> </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group"> <label for="form_lastname">User Name </label> <input
+                                    type="text" name="fullname" class="form-control"
+                                    placeholder="Please enter the fullname of your User" 
+                                    data-error="UserName is required."> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group"> <label>User Phone Number </label> <input id="form_phone"
+                                    type="text" name="phone" class="form-control"
+                                    placeholder="Please enter the phone number of the User" data-error=""> </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group"> <label for="form_price"> User Gender</label> <input
+                                    id="form_gender" type="text" name="gender" class="form-control"
+                                    placeholder="Please enter the price of the User" 
+                                    data-error="Valid email is required."> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group"> <label> User Address</label> <input type="text" name="address"
+                                    class="form-control" placeholder="Please enter the address of the User"
+                                    data-error="address is required.">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group"> <label>User Notes</label>
+                                  <input type="text" name="notes" class="form-control"
+                                    placeholder="Please enter things to note about the User" data-error=""> </div>
+                              </div>
+                              <div class="col-md-12 post"> <input type="submit"
+                                  class="btn btn-success btn-send pt-2 btn-block " value="Update User"> </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div> <!-- /.8 -->
+                </div> <!-- /.row-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Delete User Profile
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="container">
+              <div class=" text-center mt-5 ">
+                <h1>Delete User Profile </h1>
+              </div>
+              <div class="row ">
+                <div class="col-lg-7 mx-auto">
+                  <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                      <div class="container">
+                        <form id="delete-user-form" role="form">
+                          <div class="controls">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group"> <label> Email</label> <input type="email" name="email"
+                                    class="form-control" placeholder="Please enter Id of the User you wish to delete"
+                                    required="required" data-error="UserId is required."> </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 post"> <input type="submit"
+                                class="btn btn-success btn-send  pt-2 btn-block " value="Delete User"> </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div> <!-- /.8 -->
+                </div> <!-- /.row-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="/"> <button class="display-page">USERS DISPLAY PAGE</button> </a>
+  </body>
+
+  <script src="js/admin.js"> </script>
+
+  </html>

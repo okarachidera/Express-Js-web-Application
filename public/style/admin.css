@@ -1,0 +1,92 @@
+
+html{
+    background-color: #000000;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding:3rem;
+    color: black;font-family: 'Amatic SC', cursive;
+   
+}
+
+.heading{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f2f2f;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family: 'Yuji Syuku', serif;
+
+}
+button{
+    
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+}
+
+.display-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.section{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family: 'Yuji Syuku', serif;
+
+ 
+    padding: 3rem;
+    margin: 3rem;
+    background-color: burlywood;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1 {
+    margin-bottom: 40px
+}
+
+
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.post{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        padding:0rem;
+    }
+}
+    

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="shortcut icon" href="images/starWars.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- HTML Meta Tags -->
+  <title>StarWars Character</title>
+  <meta name="description"
+    content="This is a single page Application which displays ten diffferent startwars character with specific attributes which includes name, height and gender.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://week-one-task-johnsonayo.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StarWars Character">
+  <meta property="og:description"
+    content="This is a single page Application which displays ten diffferent startwars character with specific attributes which includes name, height and gender.">
+  <meta property="og:image"
+    content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AStar_Wars_Episode_VIII_The_Last_Jedi_Word_Logo_-_White_teaser_poster_variant.svg&psig=AOvVaw2IEqvtAn8YlX23K6orZ54w&ust=1635135429155000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPix8aWY4vMCFQAAAAAdAAAAABAN">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="week-one-task-johnsonayo.netlify.app">
+  <meta property="twitter:url" content="https://week-one-task-johnsonayo.netlify.app/">
+  <meta name="twitter:title" content="StarWars Character">
+  <meta name="twitter:description"
+    content="This is a single page Application which displays ten diffferent startwars character with specific attributes which includes name, height and gender.">
+  <meta name="twitter:image"
+    content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AStar_Wars_Episode_VIII_The_Last_Jedi_Word_Logo_-_White_teaser_poster_variant.svg&psig=AOvVaw2IEqvtAn8YlX23K6orZ54w&ust=1635135429155000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPix8aWY4vMCFQAAAAAdAAAAABAN">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+</head>
+
+<body>
+
+  <header>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white"> Single Page Application</h4>
+          <span class="text-muted">Showing All Starwars Character 🔥🔥🔥🔥</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid  p-5">
+        <a href="/admin">  <h1 class="dispaly-3 text-center" > Contact Card </h1></a>
+      <div class="row" id="lists">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <p> Name: <%= Data[0] %> </p>
+                        <p> Age: <%= Data[1]%> </p>
+                        <p> Gender : <%= Data[2]%> </p>
+                        <p> Phone Number: <%= Data[3]%> </p>
+                        <p> Address: <%= Data[4] %> </p>
+                        <p> Roles: <%= Data[5] %> </p>
+              <img src="images/male<%= 1 %>.png" style="height:300px">
+            </div>
+     
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+  <footer>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="/"> Made with ❤️❤️❤️ from Starwars</a>
+    </div>
+  </footer> 
+</body>
+<script src="js/index.js"> </script>
+
+</html>

@@ -1,0 +1,24 @@
+ body{
+    font-family: 'IM Fell English SC', serif;
+    background-color: rgb(46, 43, 43);
+    color: rgb(160, 160, 56);
+}
+
+
+.char {
+    background-color: rgb(46, 44, 44);
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+.card{
+background-color: rgb(144, 207, 131);
+color: black;
+
+}
+
+.row{
+    justify-content: center;
+    align-items: center;
+}
